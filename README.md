@@ -2,32 +2,27 @@
 
 #  Flutter UI Layout Breakdown
 
+```text
 Body
 └── Column
     ├── Container (Image Section)
     │   └── Image
-    │
     ├── Container (Question Section)
     │   └── Text ("What image is that")
-    │
     ├── Container (Category Section)
     │   └── Row
     │       ├── Column
     │       │   ├── Icon
     │       │   └── Text ("Food")
-    │       │
     │       ├── Column
     │       │   ├── Icon
     │       │   └── Text ("Scenery")
-    │       │
     │       └── Column
     │           ├── Icon
     │           └── Text ("People")
-    │
     └── Container (Counter Section)
         └── Row
             ├── Text ("Counter here: 4")
-            │
             └── Container (Button)
                 └── IconButton
                     └── Icon ("+")
