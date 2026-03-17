@@ -5,35 +5,30 @@
 ![WhatsApp Image 2026-03-17 at 2 20 21 PM](https://github.com/user-attachments/assets/a6df2c6c-e3a9-4651-b7ec-6c19b2005f84)
 
 
-```mermaid
-graph TD
-    Body --> Column
-    Column --> C1[Container: Image Section]
-    C1 --> Image
-    
-    Column --> C2[Container: Question Section]
-    C2 --> Text1["Text: What image is that?"]
-    
-    Column --> C3[Container: Category Section]
-    C3 --> Row1[Row]
-    Row1 --> Col1[Column]
-    Col1 --> Icon1[Icon]
-    Col1 --> T1[Text: Food]
-    
-    Row1 --> Col2[Column]
-    Col2 --> Icon2[Icon]
-    Col2 --> T2[Text: Scenery]
-    
-    Row1 --> Col3[Column]
-    Col3 --> Icon3[Icon]
-    Col3 --> T3[Text: People]
-    
-    Column --> C4[Container: Counter Section]
-    C4 --> Row2[Row]
-    Row2 --> T4["Text: Counter here: 4"]
-    Row2 --> C5[Container: Button]
-    C5 --> IB[IconButton]
-    IB --> Icon4["Icon: +"]
+```text
+Body
+└── Column
+    ├── Container (Image Section)
+    │   └── Image
+    ├── Container (Question Section)
+    │   └── Text ("What image is that")
+    ├── Container (Category Section)
+    │   └── Row
+    │       ├── Column
+    │       │   ├── Icon
+    │       │   └── Text ("Food")
+    │       ├── Column
+    │       │   ├── Icon
+    │       │   └── Text ("Scenery")
+    │       └── Column
+    │           ├── Icon
+    │           └── Text ("People")
+    └── Container (Counter Section)
+        └── Row
+            ├── Text ("Counter here: 4")
+            └── Container (Button)
+                └── IconButton
+                    └── Icon ("+")
 
 ## Getting Started
 
